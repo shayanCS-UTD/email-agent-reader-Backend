@@ -42,7 +42,8 @@ email-agent-reader-Backend/
 ├── backend/
 │   └── app/
 │       ├── main.py             # FastAPI application and route definitions
-│       └── supabase_client.py  # Supabase client initialization
+│       ├── supabase_client.py  # Supabase client initialization
+│       └── static/             # Colorful frontend (HTML/CSS/JS)
 ├── Documents/
 │   ├── Links.txt               # Project-related links
 │   └── Weekly Reports/         # Team weekly progress reports
@@ -103,6 +104,8 @@ uvicorn app.main:app --reload
 
 The API will be available at `http://127.0.0.1:8000`.
 
+A colorful frontend dashboard is available at `http://127.0.0.1:8000/frontend`.
+
 Interactive API docs (Swagger UI) are automatically available at `http://127.0.0.1:8000/docs`.
 
 ---
@@ -114,6 +117,7 @@ Interactive API docs (Swagger UI) are automatically available at `http://127.0.0
 | GET    | `/`       | Returns a welcome message          |
 | GET    | `/health` | Health check – returns `{"status": "ok"}` |
 | GET    | `/emails` | Fetches all rows from the `emails` table in Supabase |
+| GET    | `/frontend` | Serves the colorful email dashboard UI |
 
 ### Example Responses
 
