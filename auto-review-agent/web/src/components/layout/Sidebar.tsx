@@ -7,7 +7,8 @@ import {
   Activity,
   BarChart3,
   LogOut,
-  ShieldCheck
+  ShieldCheck,
+  DoorOpen
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -16,6 +17,7 @@ const navLinks = [
   { name: 'Submit Request', path: '/submit', icon: PlusCircle },
   { name: 'Approval Queue', path: '/queue', icon: ListTodo, adminOnly: true },
   { name: 'My Requests', path: '/my-requests', icon: History },
+  { name: 'Room Availability', path: '/rooms', icon: DoorOpen },
   { name: 'Activity Log', path: '/activity', icon: Activity },
   { name: 'Analytics', path: '/analytics', icon: BarChart3 },
 ];

@@ -9,6 +9,7 @@ const pageTitleMap: Record<string, string> = {
   '/submit': 'Submit Request',
   '/queue': 'Approval Queue',
   '/my-requests': 'My Requests',
+  '/rooms': 'Room Availability',
   '/activity': 'Activity Log',
   '/analytics': 'Analytics',
 };
